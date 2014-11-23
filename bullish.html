@@ -1,0 +1,115 @@
+<head>
+	<div class="layer-container">
+		<div class="layer"></div>
+		<div class="layer soft-blur-overlay"></div>
+	</div>
+
+<style>
+.layer container{position:relative}
+
+  .layer{
+    background-image: url('bull.jpg');
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    z-index: -1;
+}
+
+.soft-blur-overlay{
+	-webkit-filter: blur(4px);}
+#gobutton {
+	-moz-box-shadow:inset -2px 3px 0px 0px #fbafe3;
+	-webkit-box-shadow:inset -2px 3px 0px 0px #fbafe3;
+	box-shadow:inset -2px 3px 0px 0px #fbafe3;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #008080), color-stop(1, #007080) );
+	background:-moz-linear-gradient( center top, #008080 5%, #007080 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff5bb0', endColorstr='#ef027d');
+	background-color:#008080;
+	-webkit-border-top-left-radius:37px;
+	-moz-border-radius-topleft:37px;
+	border-top-left-radius:37px;
+	-webkit-border-top-right-radius:0px;
+	-moz-border-radius-topright:0px;
+	border-top-right-radius:0px;
+	-webkit-border-bottom-right-radius:37px;
+	-moz-border-radius-bottomright:37px;
+	border-bottom-right-radius:37px;
+	-webkit-border-bottom-left-radius:0px;
+	-moz-border-radius-bottomleft:0px;
+	border-bottom-left-radius:0px;
+	text-indent:0;
+	border:1px solid #008080;
+	display:inline-block;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	font-style:normal;
+	height:52px;
+	line-height:52px;
+	width:120px;
+	text-decoration:none;
+	text-align:center;
+	text-shadow:1px 1px 0px #750b44;
+	position: absolute;
+    top: 60%;
+    z-index: 400;
+    opacity: 0.85;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
+    font-size: 20px;
+}
+#gobutton:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ef027d), color-stop(1, #ff5bb0) );
+	background:-moz-linear-gradient( center top, #ef027d 5%, #ff5bb0 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ef027d', endColorstr='#ff5bb0');
+	background-color:#ef027d;
+}
+.tab {
+  border: 6px solid #FFFFFF;
+  height: 40%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20%;
+  background-color: white;
+  opacity: 0.6;
+  border-radius: 25px;
+  box-shadow: 1px 1px 20px #FFFFFF;
+  z-index: 100;
+  font-size: 30px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
+}
+.inputs {
+	border-radius: 10px;
+	top: 47.5%;
+	position: fixed;
+    left: 41%;
+	
+    background-color: #888888;
+    width: 18%;
+    font-size: 20px;
+    text-align: center;
+    z-index: 200;
+    opacity: 0.8;
+     box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  padding: 5px 0px 5px 5px;
+  margin: 5px 1px 3px 0px;
+  border: 1px solid rgba(81, 203, 238, 1);
+}
+
+</style>
+<a href="" id="gobutton">GO</a>
+<div class="tab">
+	Welcome to PySE
+</div>
+<input type="text"class="inputs" placeholder="Enter Email to subscribe"> </input>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js'></script>
+<script>
+$("#gobutton").css("left",($(window).width()-$("#gobutton").width())*0.5+'px');
+</script>
+</head>
